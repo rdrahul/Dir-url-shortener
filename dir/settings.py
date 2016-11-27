@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_hosts',
     #custom apps
-    'shortener'
+    'shortener',
+    'analytics'
 
 ]
 
@@ -55,6 +56,8 @@ MIDDLEWARE = [
     'django_hosts.middleware.HostsResponseMiddleware'
 ]
 
+
+#configurations for django-host app
 ROOT_URLCONF = 'dir.urls'
 ROOT_HOSTCONF = 'dir.hosts'
 DEFAULT_HOST = 'www' 
@@ -63,7 +66,7 @@ DEFAULT_REDIRECT_URL ="http://www.tirr.com:8000"
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [ os.path.join( BASE_DIR, 'templates' ) ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -127,6 +130,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = ( 
+    os.path.join(BASE_DIR , "static"),
+    '/var/www/static'
+
+ )
 
 SHORTCODE_MIN = 6
 SHORTCODE_MAX = 15

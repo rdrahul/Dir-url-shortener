@@ -1,0 +1,168 @@
+body{
+    background-image: url("images/04.jpg");
+    color: white;
+    font-family : 'ubuntu','helvetica','monospace' ;
+    position: relative;
+    box-sizing: border-box;
+    margin : 0;
+    padding : 0;
+}
+.card
+{
+    
+    width : 70%;
+    height: 75%;
+    margin: 0 auto ;
+    margin-top : 7%;
+    box-shadow: 0px 0px 5px #343434 , 0px 0px 20px #141414;
+    background : white;
+    color: black; 
+}
+.left
+{
+    width: 45%;
+    float: left;
+    position: relative;
+    height: 100%;
+    background-image: url("images/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -100px;
+}
+.right
+{
+    width: 55%;
+    height: 100%;
+    float: right;
+}
+
+h1
+{
+    
+    color : dodgerblue;
+    font-size: 40px;
+    
+    text-align: center;
+}
+
+.heading
+{
+    margin-top: 20px;
+}
+
+.card form
+{
+    display: table;
+    top:20%;
+    width: 100%;
+    align-content: center;
+    text-align: center; 
+    position: relative;
+}
+.card label{
+    display: none;
+
+}
+.card input
+{
+    width: 80%;
+    padding: 5px;
+    border: none;
+    border-bottom : 2px solid #ff6319;
+    font-size: 16px;
+    font-family: ubuntu;
+}
+
+.card input:focus
+{
+    outline: none;
+}
+
+
+.shortcode
+{
+    padding: 10px;
+    text-align: center;
+    margin-top: 20%;
+}
+.shortcode h3
+{
+    font-size: 16px;
+    color: #444;
+    word-wrap: break-word;
+}
+
+.shortcode a
+{
+    background: #f15c1a;
+    width: auto;
+    margin: 20px;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.card button
+{
+    width: 50%;
+    float: none;
+    margin: 20px auto;
+    border: none;
+    font-size: 20px;    
+}
+
+.button
+{
+    box-shadow: 0 0 2px #222;
+    font-family: ubuntu;
+    width: 50%;
+    float: none;
+    display: block;
+    margin: 20px auto;
+    border: none;
+    background-color: #f15c1a;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    border-radius: 20px;
+}
+
+.count
+{
+    margin-top: 30px;
+    background: #119ae0;
+    width: 50px;
+    color: white;
+    border-radius: 50%;
+    height: 50px;
+    margin: 30px auto;
+    padding: 2px;
+    box-shadow: 0 0 10px #444;
+
+}
+.count h3{
+    color: white;
+    
+}
+
+.back
+{
+    position: absolute;
+    top:10px;
+    left: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #119ae0;
+    box-shadow: 0 0 10px #444;
+    text-align: center;
+}
+.back-icon
+{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin: 10px auto;
+    background-image: url("images/icon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

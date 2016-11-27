@@ -1,6 +1,6 @@
 from django.conf.urls import url
-from .views import DirView
+from .views import DirView, HomeView
 urlpatterns = [
-    
-    url( r'^(?P<shortcode>\w+){6,15}/$' , DirView.as_view(), name = "Home" )
+    url(r'^$', HomeView.as_view(), name = "Home" ),
+    url( r'^(?P<shortcode>\w+)/$' , DirView.as_view(), name = "Redirect" )
 ]

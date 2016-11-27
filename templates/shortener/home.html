@@ -1,0 +1,29 @@
+{% load static %}
+<html>
+    <head>
+        <title>Dir - shorten your url </title>
+        <link rel="stylesheet" href="{% static 'styles.css' %}">
+    </head>
+    <body>
+            
+            <div class = "card" >
+                <div class="left" >
+                    
+                </div>
+                <div class="right" >
+                    
+                    <div class="heading">
+                        <h1> Shorten Your URL </h1>
+                    </div>
+                    
+                    <form method="POST" action="." >
+                        {% csrf_token %}
+                        {{ form }}
+                        <button class="button" type="submit" >Submit</button>
+                    </form>
+                </div>
+
+            </div>
+    </body>     
+</html>
+

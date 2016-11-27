@@ -1,0 +1,37 @@
+{% load static %}
+<html>
+    <head>
+        <title>Dir - shorten your url </title>
+        <link rel="stylesheet" href="{% static 'styles.css' %}">
+        <script>
+            clicked = function( ){  location.reload(true); }
+        </script>
+    </head>
+    <body>
+            <div class = "card" >
+                <div class="left" >
+                    <div class = "back button" >
+                        <a href = "{% url 'Home' %}"<i class="back-icon" ></i></a>
+                    </div>
+                </div>
+                <div class="right" >
+                    <div class="heading">
+                        <h1> Dir!! Your URL </h1>
+                    </div>
+                    
+                    <div class="shortcode " >
+                        
+                        <h3>{{object.url}}</h3>
+                        <p>
+                        <a class="button" href="{{object.get_short_url}}" target="_blank" onclick="location.reload(true);" > {{object.get_short_url}} </a>
+                        </p>
+                        <div class="count">
+                            <h3>{{count}}</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </body>     
+</html>
+
